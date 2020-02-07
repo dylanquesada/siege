@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import Maps from "./components/maps/maps.js";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
       </div>
       <Switch>
         <Route path="/maps">
-          <maps />
+          <Maps />
         </Route>
         <Route path="/schedule">
           <schedule />
@@ -54,10 +55,6 @@ export default App;
 
 function Home() {
   return <h2>Home</h2>;
-}
-
-function maps() {
-  return <h2>maps</h2>;
 }
 
 function schedule() {
