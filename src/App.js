@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
-import Maps from "./components/maps/maps.js";
+import Maps from "./components/maps/maps/maps.js";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
